@@ -438,7 +438,7 @@ a {
 .section-marker {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
   margin: 0 0 28px;
   color: var(--color-blue);
 }
@@ -449,13 +449,6 @@ a {
   height: 1px;
   content: "";
   background: rgba(0, 83, 162, 0.34);
-}
-
-.section-marker span {
-  font-family: var(--font-serif);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
 }
 
 .section-marker p {
