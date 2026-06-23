@@ -75,6 +75,7 @@ a {
   z-index: -1;
   content: "";
   background: rgba(255, 255, 255, 0.96);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%, 32% 57%, 0 57%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%, 32% 57%, 0 57%);
 }
 
@@ -89,6 +90,7 @@ a {
   padding: 0;
   overflow: hidden;
   background: var(--color-blue);
+  -webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100%);
 }
 
