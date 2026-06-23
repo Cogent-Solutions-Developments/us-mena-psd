@@ -81,26 +81,15 @@ a {
 .angled-menu {
   position: absolute;
   bottom: 0;
-  left: var(--page-gutter);
-  z-index: 2;
+  left: 0;
+  z-index: 3;
   display: block;
-  width: calc(var(--menu-width) - var(--page-gutter));
+  width: var(--menu-width);
   height: 52px;
   padding: 0;
   overflow: hidden;
   background: var(--color-blue);
-  clip-path: polygon(0 0, calc(100% - 32px) 0, 100% 100%, 32px 100%);
-}
-
-.main-bar::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: calc(var(--page-gutter) + 32px);
-  height: 52px;
-  content: "";
-  background: #083C6F;
+  clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100%);
 }
 
 .main-bar__right {
@@ -126,9 +115,9 @@ a {
 .angled-menu__inner {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  width: calc(100% - 78px);
+  width: calc(100% - var(--page-gutter) - 56px);
   height: 100%;
-  margin-left: 32px;
+  margin-left: var(--page-gutter);
 }
 
 .angled-menu a {
@@ -567,11 +556,11 @@ a {
   }
 
   .angled-menu {
-    width: calc(var(--menu-width) - var(--page-gutter));
+    width: var(--menu-width);
   }
 
   .angled-menu__inner {
-    width: calc(100% - 72px);
+    width: calc(100% - var(--page-gutter) - 56px);
   }
 
   .angled-menu a {
