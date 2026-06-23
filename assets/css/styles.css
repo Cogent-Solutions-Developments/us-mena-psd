@@ -329,24 +329,27 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 64px;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-blue);
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .why-section article {
+  display: flex;
+  flex-direction: column;
   min-height: 270px;
-  padding: 34px 38px 36px 0;
+  padding: 38px 42px 42px;
 }
 
 .why-section article + article {
-  padding-left: 38px;
-  border-left: 1px solid var(--color-border);
+  padding-left: 42px;
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .why-section article span {
   display: block;
   margin-bottom: 26px;
-  color: var(--color-blue);
+  color: rgba(255, 255, 255, 0.78);
   font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 400;
@@ -354,16 +357,18 @@ a {
 
 .why-section h3 {
   margin: 0;
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: var(--font-serif);
   font-size: 26px;
   font-weight: 400;
   line-height: 1.35;
+  min-height: 72px;
 }
 
 .why-section article p {
   margin: 18px 0 0;
-  color: var(--color-muted);
+  padding-top: 0;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 16px;
   line-height: 1.72;
 }
@@ -488,12 +493,12 @@ a {
   .why-section article,
   .why-section article + article {
     min-height: auto;
-    padding: 30px 0;
+    padding: 30px 28px;
     border-left: 0;
   }
 
   .why-section article + article {
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
   }
 
 }
@@ -554,6 +559,7 @@ a {
 
   .why-section h3 {
     font-size: 23px;
+    min-height: 0;
   }
 
   .hero__actions {
