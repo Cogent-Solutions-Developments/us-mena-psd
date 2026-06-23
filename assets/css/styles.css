@@ -107,11 +107,12 @@ a {
   display: grid;
   grid-template-columns: minmax(0, max-content) 1px max-content;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   column-gap: 34px;
   min-height: 122px;
   margin-left: var(--menu-width);
   padding-left: 48px;
+  padding-right: 0;
 }
 
 .main-bar__divider {
