@@ -1383,6 +1383,19 @@ a {
     font-size: 36px;
   }
 
+  .past-speakers-section {
+    padding-top: 104px;
+    padding-bottom: 82px;
+  }
+
+  .past-speakers-section h2 {
+    font-size: 36px;
+  }
+
+  .past-speaker-card {
+    flex-basis: min(330px, 78vw);
+  }
+
   .why-section__grid {
     grid-template-columns: 1fr;
   }
@@ -1526,6 +1539,32 @@ a {
 
   .agenda-section__header > p {
     font-size: 16px;
+  }
+
+  .past-speakers-section {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  }
+
+  .past-speakers-section h2 {
+    font-size: 28px;
+  }
+
+  .past-speakers-grid {
+    margin-top: 40px;
+  }
+
+  .past-speaker-card {
+    flex-basis: calc(100vw - 40px);
+  }
+
+  .past-speaker-card__body {
+    min-height: 220px;
+    padding: 22px 20px 24px;
+  }
+
+  .past-speaker-card__body h3 {
+    font-size: 24px;
   }
 
   .agenda-theme {
